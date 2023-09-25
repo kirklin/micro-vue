@@ -1,0 +1,66 @@
+{
+  "name": "micro-vue",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@7.12.2",
+  "description": "",
+  "author": "Kirk Lin <https://github.com/kirklin>",
+  "license": "MIT",
+  "funding": "https://www.buymeacoffee.com/linkirk",
+  "homepage": "https://github.com/kirklin/micro-vue#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirklin/micro-vue.git"
+  },
+  "bugs": "https://github.com/kirklin/micro-vue/issues",
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepublishOnly": "nr build",
+    "release": "bumpp && npm publish",
+    "start": "esno src/index.ts",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "up": "taze major -I"
+  },
+  "devDependencies": {
+    "@antfu/ni": "^0.18.8",
+    "@kirklin/eslint-config": "^0.2.1",
+    "@types/node": "^18.11.13",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.29.0",
+    "esno": "^0.16.3",
+    "pnpm": "^7.18.2",
+    "rimraf": "^3.0.2",
+    "taze": "^0.8.4",
+    "typescript": "^4.9.4",
+    "unbuild": "^1.0.2",
+    "vite": "^4.0.1",
+    "vitest": "^0.25.7"
+  }
+}
