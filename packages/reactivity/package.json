@@ -13,6 +13,7 @@
   "bugs": "https://github.com/kirklin/micro-vue/issues",
   "keywords": [],
   "scripts": {
+    "build": "unbuild",
     "test": "vitest"
   },
   "dependencies": {
