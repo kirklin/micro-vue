@@ -1,0 +1,20 @@
+{
+  "name": "@micro-vue/shared",
+  "version": "0.0.0",
+  "description": "@micro-vue/shared",
+  "author": "Kirk Lin <https://github.com/kirklin>",
+  "license": "MIT",
+  "funding": "https://www.buymeacoffee.com/linkirk",
+  "homepage": "https://github.com/kirklin/micro-vue#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirklin/micro-vue.git"
+  },
+  "bugs": "https://github.com/kirklin/micro-vue/issues",
+  "keywords": [],
+  "scripts": {
+    "test": "vitest"
+  },
+  "dependencies": {
+  }
+}

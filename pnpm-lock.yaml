@@ -48,6 +48,16 @@ importers:
         specifier: ^0.25.7
         version: 0.25.7
 
+  packages/reactivity:
+    dependencies:
+      '@micro-vue/shared':
+        specifier: workspace:*
+        version: link:../shared
+
+  packages/shared: {}
+
+  packages/vue: {}
+
 packages:
 
   /@ampproject/remapping@2.2.0:
